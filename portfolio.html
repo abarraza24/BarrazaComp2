@@ -1,0 +1,139 @@
+<!-- Alexis Barraza  abarraza24@cnm.edu
+     Program: Comp 2 HTML Website with CSS
+     Instructor: Rob Garner
+     Date: 08/30/2024-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Tic-Tac-Toe in JavaScript</h2>
+            <p>
+                A simple well-known game. It is played by two players on a 3x3 grid.Players get their own symbol, either X or O.
+                Provides data validation such as player names, fields for guesses, game results display section, Such as player names
+                who the winner is, scores. Includes a restart button, CSS/HTML that make the game look complete and user friendly.
+            </p>
+            <p>You Can Play the Game in the Following Link <a href="TicTacToeGame/indexGame.html">Click here to play the game.</a></p>
+            <img src="images/TicTacToeGame.png" style="width:500px;height:600px;" />
+        </section>
+        <section>
+            <h3>Flash Card App in C#</h3>
+            <p>
+                This project is a Flash Card Application built using C# and WPF that allowss the users to create, update, delete and study flash cards.
+                THe application enables users to add new  flashcards with a title, question and answer, which are then stored in a SQL Server database. Users
+                can view the list of all flashcards, display the answer for a selected flashcard, and mark the flashcard as correct or incorrect, based on the answer.
+                The application also supports updating and deleting existing flashcards. Users can select a flashcard from the list, edit its content, and update the database
+                With new information.The project is a useful tool for studing and memorizing information, leveraging a simple yet effective user interface and backend database
+                management to provide a smooth and functional experience.
+            </p>
+            <img src="images/FlashCard.png" style="width:800px;height:600px;" />
+        </section>
+        <section>
+            <h4>Text Based Adventure Game in C#</h4>
+            <p>
+                The TextBasedAdventureGame project is built using C# and exemplifies object-oriented design to create a text-based adventure experience. Key classes like Map,
+                Player, MapLocation, TravelOption, and PortableHidingPlace organize the game's structure. The Map class handles location management and player navigation, while
+                Player manages inventory and location. The MapLocation class describes in-game locations, TravelOption defines movement possibilities, and PortableHidingPlace
+                enables item concealment within other items. This architecture facilitates a dynamic game environment with interactive exploration and inventory management.
+                The TravelWindow class, implemented as a WPF window, provides the game's user interface, allowing players to navigate locations and manage items through a graphical
+                interface. It updates the display based on player actions, such as moving between locations, taking or dropping items, and handling game events like winning or losing.
+                The window integrates event handlers and methods to respond to user inputs, ensuring a seamless gameplay experience. This approach highlights principles of encapsulation and user interface design,
+                effectively bridging gameplay logic and player interaction
+            </p>
+            <img src="images/TextBasedAdventureGame.png" style="width:800px;height:600px;" />
+        </section>
+        <section>
+            <h4>Game Of Life in C++</h4>
+            <p>
+                The C++ code implements Conway's Game of Life and its variants through object-oriented design. It features classes like ConwayCell,
+                FredkinCell, ModifiedFredkinCell, Seeds, and AlexisCell, inheriting from the LifeCell base class, promoting code reuse and modularity.
+                Each cell type computes living neighbors and updates states based on specific rules. Grid representation, stored as a two-dimensional array,
+                loads initial patterns from text files. Dynamic polymorphism selects methods based on the chosen cell type, ensuring adaptability. A driver
+                program manages the simulation, allowing user interaction for cell type and pattern selection. It iterates through generations, updating the grid
+                and displaying each state until termination. The code showcases object-oriented principles, encapsulation, and polymorphism, effectively simulating Conway's Game of Life
+                and exploring cellular automata variations.
+            </p>
+            <img src="images/GameOfLife.png" style="width:800px;height:600px;" />
+            <img src="images/GameOfLife2.png" style="width:800px;height:600px;" />
+            <img src="images/GameOfLife3.png" style="width:800px;height:600px;" />
+        </section>
+        <!--3 Elements Using internal Style-->
+        <style>
+            h2 {
+                font-family: Verdana, sans-serif;
+                color: #4CAF50;
+                font-weight: bold;
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 18px;
+                color: #666;
+            }
+        </style>
+         <style>
+            h3 {
+                font-family: Verdana, sans-serif;
+                color: #4CAF50;
+                font-weight: bold;
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 18px;
+                color: #666;
+            }
+        </style>
+         <style>
+            h4 {
+                font-family: Verdana, sans-serif;
+                color: #4CAF50;
+                font-weight: bold;
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 18px;
+                color: #666;
+            }
+        </style>
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/abarraza24?tab=repositories"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Alex</span></p>
+        </div>
+    </footer>
+</body>
+</html>

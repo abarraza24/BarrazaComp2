@@ -1,0 +1,171 @@
+/*Apply default styles to all elements
+ Removes default padding,margin  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Hide the scrollbar for Webkit-based browser example chrome safari */
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+/*Defining custoom variables for color, and winning-blocks */
+:root {
+    --orange: #f2c14e;
+    --winning-blocks: #4b382d;
+}
+/*Style for body */
+body {
+    color: var(--orange);
+    font-family: "Nabla", system-ui;
+    background: #262a2f;
+}
+/*styles the main container 
+ by using flexbox layout */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+/*styles the heading (h1) */
+h1{
+    font-size: 54px;
+    text-transform: uppercase;
+}
+/*style paragraph elements */
+p{
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 15px;
+}
+/*styles the container*/
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #262a2f;
+}
+/*styles the gameboard */
+#gameboard{
+    width: 450px;
+    display: flex;
+    flex-wrap:  wrap;
+    margin-top: 20px;
+}
+/* Styles individual game cells (boxes) */
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--orange);
+    font-size: 120px;/*Set the font size for the game symbols */
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+/*styles Buttons */
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: black;
+    border-color: var(--orange);
+    color: #333;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    transition:200ms transform;
+}
+/*Adds a hover effect to buttons */
+button:hover {
+    cursor: pointer;
+    transform:  translateY(-2px);
+}
+/*Style for the circle game piece */
+.circle {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 15px solid var(--orange);
+    box-sizing: border-box;
+}
+/*styles for the cross (x) game piece */
+.x {
+    height: 90px;
+    width: 90px;
+    position: relative;
+    transform: rotate(45deg);/*rotates the element to create an x shape */
+}
+/*Style the before and after pseudo-elements for the x piece
+  by using a relitave positioning */
+.x::before, .x::after {
+    content: "";
+    position: absolute;
+    background-color: var(--orange);
+}
+/*style for the vertical part of the X */
+.x::before {
+    left: 50%;
+    width: 30%;
+    height: 100%;
+    margin-left: -15%;
+}
+/*styles for the horizantal part of the x */
+.x::after {
+    top: 50%;
+    width: 100%;
+    height: 30%;
+    margin-top: -15%;
+}
+/*styles the player names section */
+#player-names{
+    margin-bottom: 30px;
+}
+/* Style the input fields within the player names section */
+#player-names input{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+/* Style the scoreboard */
+#scoreboard {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+/* Keyframes for a celebratory animation
+ Starts with no rotation, then slightly turns to the right,left, and rotatees back right, and left
+ and back to original position */
+@keyframes celebrate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Apply the animation to the winning boxes */
+.winning {
+    animation: celebrate 1s ease-in-out infinite;
+}

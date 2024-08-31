@@ -1,0 +1,56 @@
+<!-- Alexis Barraza
+     abarraza24@cnm.edu
+     Final Program TicTac To Game
+      05/0/2024-->
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac Toe Final </title>
+    <!--Found this Font on GOOGLE Fonts API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tictactoe.css">
+    <link href="index.html" />
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1 id="title">Tic Tac Toe</h1>
+            <p id="info">Player.</p>
+            <label for="player-x-name">Player Cross Name:</label>
+            <input type="text" id="player-x-name" name="player-x-name">
+            <label for="player-circle-name">Player Circle Name:</label>
+            <input type="text" id="player-circle-name" name="player-circle-name"><br>
+            <div class="button-container">
+                <button id="start-btn">Start Game</button>
+                <button id="restart-btn">Restart</button>
+            </div>
+            <!--ScoreBoard-->
+            <div id="scoreboard">
+                <div class="score">
+                    <p>Player Cross: <span id="score-x">0</span></p>
+                </div>
+                <div class="score">
+                    <p>Player Circle: <span id="score-circle">0</span></p>
+                </div>
+            </div>
+        </div>
+        <!--Start Game Board-->
+        <div id="gameboard">
+            <!--Game Cells will be dynamically generated here by JavaScript-->
+        </div>
+    </div>
+    <script src="tictactoe.js"></script>
+</body>
+</html>
